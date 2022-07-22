@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import DockerNames from './class/DockerNames';
+
+export default new DockerNames();
