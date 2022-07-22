@@ -1,7 +1,3 @@
-# docker-names-ts
-
-Generate Docker Names
-
 # Docker-Names-TS
 
 If no name is provided by the user while creating/running a Docker container, Docker automatically assigns the container a name.
