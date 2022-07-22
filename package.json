@@ -2,18 +2,17 @@
   "name": "docker-names-ts",
   "version": "1.0.0",
   "description": "Generate semi-random names - Completly written with typescript",
-  "main": "main.js",
+  "main": "build/main.js",
   "scripts": {
     "start:dev": "nodemon ./src/main.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vashian/docker-names-ts.git"
   },
-  "author": "Mohammad Reza Vashian <mrvashian@gmail.com>",
-  "license": "ISC",
+  "author": "Mohammad Reza Vashian <mrvashian@gmail.com> @mrvashian",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vashian/docker-names-ts/issues"
   },
@@ -31,5 +30,17 @@
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
-  }
+  },
+  "dependencies": {
+    "nanoid": "3.1"
+  },
+  "keywords": [
+    "docker",
+    "docker-names",
+    "docker-names-ts",
+    "docker-names-typescript",
+    "docker-random-names",
+    "docker-random-names-ts",
+    "docker-random-names-typescript"
+  ]
 }
