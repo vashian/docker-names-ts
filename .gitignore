@@ -11,7 +11,7 @@ coverage
 
 # Transpiled files
 build/
-
+lib/
 # VS Code
 .vscode
 !.vscode/tasks.js

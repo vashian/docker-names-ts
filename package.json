@@ -1,13 +1,20 @@
 {
   "name": "docker-names-ts",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Generate semi-random names - Completly written with typescript",
-  "main": "build/main.js",
+  "main": "lib/main.js",
+  "types": "lib/main.d.js",
+  "module": "lib/main.js",
+  "type": "module",
   "scripts": {
     "start:dev": "nodemon ./src/main.ts",
-    "build": "tsc",
+    "prepublish": "npm run tsc",
+    "tsc": "tsc -p tsconfig.json",
     "test": "jest"
   },
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vashian/docker-names-ts.git"
@@ -19,18 +26,18 @@
   },
   "homepage": "https://github.com/vashian/docker-names-ts#readme",
   "devDependencies": {
-    "@types/jest": "^28.1.6",
-    "@types/node": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "eslint": "^8.20.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^26.6.0",
-    "jest": "^28.1.3",
-    "nodemon": "^2.0.19",
-    "ts-jest": "^28.0.7",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "nanoid": "3.1"

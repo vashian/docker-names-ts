@@ -14,13 +14,13 @@ class DockerNames {
   public getRandomName(randChar?: boolean | number): string {
     const randomName = this.generateRandomName(this.adjectives, this.surnames);
 
-    if (randChar === true || randChar > 0) {
-      const length: number = typeof randChar === 'number' ? randChar : 6;
-
-      return `${randomName}_${this.getRandomChar(length)}`;
+    if (!randChar) {
+      return randomName;
     }
 
-    return randomName;
+    const length: number = typeof randChar === 'number' ? randChar : 6;
+
+    return `${randomName}_${this.getRandomChar(length)}`;
   }
 
   private generateRandomName(
