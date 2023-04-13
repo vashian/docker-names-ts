@@ -1,6 +1,6 @@
 import { customAlphabet } from 'nanoid';
 
-import { leftNames, rightNames } from '../data/names';
+import { leftNames, rightNames } from '../data/names.js';
 
 class DockerNames {
   private adjectives: string[];

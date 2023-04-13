@@ -1,6 +1,6 @@
 {
   "name": "docker-names-ts",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "description": "Generate semi-random names - Completly written with typescript",
   "main": "lib/main.js",
   "types": "lib/main.d.js",
